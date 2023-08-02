@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background: var(--content-bg);
+}
+body[data-theme="light"] {
+  --filter-bg: #fff;
+  --blue: #6771e3;
+  --blue-light: #c5c9f4;
+  --light-bg: #f2f2f2;
+  --placeHolder: #8c8f96;
+  --text-color: #19202d;
+  --content-bg: #f2f2f2;
+}
+body[data-theme="dark"] {
+  --filter-bg: #19202d;
+  --title-text: #fff;
+  --content-bg: #121721;
+  --text-color: #fff;
+  --placeHolder: #8c8f96;
+}
