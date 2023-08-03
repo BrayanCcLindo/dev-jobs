@@ -179,14 +179,14 @@ function Header() {
             alt=""
           />
           <LightDarkModeSectionStyled>
-            <img src="../public/Images/light-mode.svg" alt="" />
+            <img src="../Images/light-mode.svg" alt="" />
             <DarkmodeButton
               type="checkbox"
               onClick={() => {
                 setMode(nextMode);
               }}
             ></DarkmodeButton>
-            <img src="../public/Images/dark-mode.svg" alt="" />
+            <img src="../Images/dark-mode.svg" alt="" />
           </LightDarkModeSectionStyled>
         </div>
         {pathname === "/" && <Filters />}
