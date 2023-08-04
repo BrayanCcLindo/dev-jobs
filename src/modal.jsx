@@ -10,7 +10,7 @@ const ModalContentStyled = styled.div`
     outline-color: #6771e3;
     border: none;
     padding: 16px 16px 16px 40px;
-    background-image: url("../public/Images/location.svg");
+    background-image: url("../Images/location.svg");
     background-repeat: no-repeat;
     background-position: left 15px center;
     font-family: "Kumbh Sans", sans-serif;
@@ -160,7 +160,7 @@ function Modal({
       <Dialog.Root>
         <Dialog.Trigger asChild>
           <button className="Button violet">
-            <img src="../public/Images/filter.svg" alt="" />
+            <img src="../Images/filter.svg" alt="" />
           </button>
         </Dialog.Trigger>
         <Dialog.Portal>
