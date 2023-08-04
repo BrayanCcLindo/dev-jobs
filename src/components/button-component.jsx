@@ -8,6 +8,7 @@ const ButtonComponentStyled = styled.button`
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  width: inherit;
   cursor: pointer;
   &:focus {
     outline: none;

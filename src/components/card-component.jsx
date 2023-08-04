@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 const CardComponentStyled = styled.div`
-  padding: 50px 32px 32px;
+  padding: 1rem;
   background: var(--filter-bg);
   border-radius: 0.5rem;
   .business__logo {
@@ -13,10 +13,11 @@ const CardComponentStyled = styled.div`
     align-items: center;
     justify-content: center;
     width: fit-content;
-    margin-top: -78px;
+    margin-top: -45px;
   }
   .business__logo img {
     object-fit: contain;
+    border-radius: 1rem;
   }
 
   .card__title {
@@ -88,7 +89,7 @@ function CardComponent({
           <ParagraphStyled>{tags}</ParagraphStyled>
         </div>
 
-        <h3 className="card__title">
+        <h3 className="card__title" tabIndex={0}>
           {/* <Link className="card__title" to={`/${slug}`}> */}
           {position}
           {/* </Link> */}

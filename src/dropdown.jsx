@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const FilterStyled = styled.button`
-  background: transparent;
+  background: var(--filter-bg);
   color: #19202d;
   outline-color: #6771e3;
   border: none;
@@ -45,6 +45,7 @@ const OptionListStyled = styled.button`
 `;
 
 const ContainerLsitOption = styled.div`
+  background: var(--filter-bg);
   margin-top: 0.25rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -53,6 +54,12 @@ const ContainerLsitOption = styled.div`
   max-width: 100%;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   overflow-x: hidden;
+  color: var(--text-color);
+  position: absolute;
+  top: 70px;
+  left: 0;
+  overflow-y: auto;
+  max-height: 200px;
 `;
 const DropDownContainerStyled = styled.div`
   position: relative;
@@ -87,17 +94,22 @@ function FilterByLocation({
         {selected}
       </FilterStyled>
       <ContainerLsitOption>
+        {/* <OptionListStyled value="ilter by location...">
+          Filter by location...
+        </OptionListStyled> */}
         {showList &&
-          locations.map((country) => {
+          locations?.map((country) => {
             return (
-              <OptionList
-                key={country}
-                text={country}
-                SelectedOption={SelectedOption}
-                setSelectedOption={setSelectedOption}
-                setShowList={setShowList}
-                data={data}
-              />
+              <>
+                <OptionList
+                  key={country}
+                  text={country}
+                  SelectedOption={SelectedOption}
+                  setSelectedOption={setSelectedOption}
+                  setShowList={setShowList}
+                  data={data}
+                />
+              </>
             );
           })}
       </ContainerLsitOption>

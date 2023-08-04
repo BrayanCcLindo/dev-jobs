@@ -4,6 +4,7 @@ import FilterByLocation from "./dropdown";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "./pages/home";
 import { useLocation } from "react-router-dom";
+import Modal from "./modal";
 
 const DarkmodeButton = styled.input`
   width: 3rem;
@@ -121,16 +122,18 @@ const HeaderStyled = styled.div`
     font-size: 17px;
     white-space: nowrap;
     color: var(--text-color);
+    border: none;
+    background: none;
   }
 
   .filter__time {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    justify-content: space-around;
     border-inline-start: 1px solid #e5e5e5;
     padding: 0.5rem;
+    background: var(--filter-bg);
   }
 
   .icon__check {
@@ -273,13 +276,17 @@ export function Filters() {
           <div className="icon__check" tabIndex={0}>
             <img src="../public/Images/check.svg" alt="" />
           </div>
-          {/* <label htmlFor="fullTime">
-            <input type="checkbox" id="fullTime" />
-            Aqui
-          </label> */}
           <span className="checkBox">
             {isMobile ? (
-              <img src="../public/Images/filter.svg" alt="" />
+              <Modal
+                selected={
+                  !selectedOption ? "Filter by location..." : selectedOption
+                }
+                locations={locations}
+                SelectedOption={selectedOption}
+                setSelectedOption={setSelectedOption}
+                data={data}
+              />
             ) : (
               "Full Time Only"
             )}

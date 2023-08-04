@@ -6,7 +6,7 @@ const SectionWrapperStyled = styled.section`
   margin: auto;
   padding: 1rem;
   margin-top: 8rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 `;
 const ButtonWrapperStyled = styled.div`
   display: flex;

@@ -15,7 +15,6 @@ function Home() {
   const [searchValue, setSearchValue] = useState("");
   const [filterJobs, setFilterJobs] = useState([]);
   const [selectedOption, setSelectedOption] = useState("");
-  console.log(filterJobs, "filterJobs");
 
   return (
     <AppContext.Provider
@@ -80,6 +79,7 @@ function Home() {
               );
             })}
         </CardsLayout>
+
         <ButtonWrapper />
       </SectionWrapper>
     </AppContext.Provider>

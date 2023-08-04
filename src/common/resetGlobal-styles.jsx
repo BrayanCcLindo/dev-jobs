@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
   body {
-*    
+*
 *::before,
 *::after {
   box-sizing: border-box;
