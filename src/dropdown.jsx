@@ -7,7 +7,7 @@ const FilterStyled = styled.button`
   outline-color: #6771e3;
   border: none;
   padding: 32px 32px 32px 56px;
-  background-image: url("../public/Images/location.svg");
+  background-image: url("../Images/location.svg");
   background-repeat: no-repeat;
   background-position: left 24px center;
   font-family: "Kumbh Sans", sans-serif;

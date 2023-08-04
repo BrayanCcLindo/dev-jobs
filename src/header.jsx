@@ -253,7 +253,7 @@ export function Filters() {
       }}
     >
       <div className="filter__title">
-        <img src="../public/Images/search.svg" alt="" />
+        <img src="../Images/search.svg" alt="" />
         <input
           onChange={(event) => {
             setSearchValue(event.target.value);
@@ -274,7 +274,7 @@ export function Filters() {
       <div className="filter__time">
         <div className="icon__check__fullTime">
           <div className="icon__check" tabIndex={0}>
-            <img src="../public/Images/check.svg" alt="" />
+            <img src="../Images/check.svg" alt="" />
           </div>
           <span className="checkBox">
             {isMobile ? (
@@ -295,7 +295,7 @@ export function Filters() {
         <Button
           text={
             isMobile ? (
-              <img src="../public/Images/search-mobile.svg" alt="" />
+              <img src="../Images/search-mobile.svg" alt="" />
             ) : (
               "Search"
             )
